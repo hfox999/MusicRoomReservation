@@ -1,0 +1,28 @@
+/*
+colors from coolors
+purple=#8764A7
+light grey=#C1C1C1
+yellow=#FFCC66
+blue=#97B4D6
+*/
+
+fieldset {
+    border: 0;
+}
+label {
+	display: block;
+ 	margin: 30px 0 0 0;
+}
+div{
+	text-align: center;
+	background-color: #FFCC66;
+}
+
+select{
+	font-size: 40px;
+	background-color: #C1C1C1;
+}
+
+label{
+	font-size: 40px;
+}
