@@ -26,3 +26,9 @@ select{
 label{
 	font-size: 40px;
 }
+button{
+	text-align: center;
+}
+#navigation{
+	text-align: center;
+}

@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>Login</title>
+	<title>View My Reservations</title>
+	
 </head>
 <body>
-	<div class="" id="login">
-		<table>
-			
-		</table>
-		<form>
-			Email: <input id="email" type="text" name="email">
-		</form>
-		<form>
-			Password: <input id="password "type="password" name="password">
-		</form>
-		<input type="button" onclick="location.href='index.html';" value="Login!" />
+	<div id="header">
+		<h1 id="weekReservations">5/1-5/7 Reservations</h1>
+	</div>
+	<div id="myReservations">
+		<div id="reservation1">
+			<img src="deleteIcon.png" onclick="deleteThis(this)">
+			<h1 id="date1">5/1/19</h1>
+			<h3 id="room1">Room 4: Piano</h3>
+			<h3 id="time1">12:00pm-1:30pm</h3>
+		</div>
+		<div id="reservation2">
+			<img src="deleteIcon.png" onclick="deleteThis(this)">
+			<h1 id="date2">5/4/19</h1>
+			<h3 id="room2">Room 64: Keyboard</h3>
+			<h3 id="time2">2:00pm-4:00pm</h3>
+		</div>
+	</div>
+	<div id="homeButton">
+		<input type="button" onclick="location.href='selectScreen.html';" value="Menu" />
 	</div>
 
+
+	<!-- javascript links to jquery and bootstrap keep at bottom of body!
+	To add a new js file, make sure in same folder as html files
+	<script src="fileNameHere.js"></script>
+	-->
 	<script src="myscript.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
