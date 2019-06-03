@@ -103,10 +103,41 @@ function Reservation(startTime, endTime, day, instrument){
 	this.instrument = instrument;
 }
 
+function isConflict(reservation, resArray){
+	resArray.forEach(function(item){
+		if(reservation.day == item.day){
+			if(reservation.startTime >= item.startTime && reservation.startTime <= item.endTime){
+				return item.endTime;
+			}
+			else if(reservation.endTime >= item.startTime && reservation.endTime <= item.endTime){
+				return item.startTime;
+			}
+		}
+	});
+	return 0;
+}
+
 function storeReservation(){
 	var myReservation = new Reservation(startAvailability.value, endAvailability.value, date.value, salutation.value);
-	window.alert(JSON.stringify(myReservation));
-	localstorage.res1 = JSON.stringify(myReservation);
+	if(!localStorage.res){
+		var tempArr = [];
+		localStorage.res = JSON.stringify(tempArr);
+	}
+	var storedArr = JSON.parse(localStorage.res);
+	if(storedArr.length != 0){
+		var conflictCheck;
+		if(!(storedArr instanceof Array)){
+			window.alert("Something broke on our end! (Invalid array)");
+			var conflictCheck = isConflict(myReservation, storedArr);
+			return;
+		}
+		else if(conflictCheck != 0){
+			window.alert("Reservation conflict with reservation that starts/ends at " + conflictCheck);
+			return;
+		}
+	}
+	storedArr.push(myReservation);
+	localStorage.res = JSON.stringify(storedArr);
 }
 </script>
 
