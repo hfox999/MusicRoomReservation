@@ -32,3 +32,8 @@ button{
 #navigation{
 	text-align: center;
 }
+
+div.room{
+	border-style: solid;
+	width: 50;
+}
