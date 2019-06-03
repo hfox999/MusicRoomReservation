@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Filter</title>
 	<script>
-  $( function() {
+  ( function() {
     $( "#speed" ).selectmenu();
  
     $( "#files" ).selectmenu();
@@ -39,20 +39,19 @@
 		<fieldset>
 		<label for="date">Select a date</label>
 		<select name="date" id="date">
-			<option selected="selected">Sunday (5/1/19)</option>
-		  	<option>Monday (5/2/19)</option>
-		  	<option>Tuesday (5/3/19)</option>
-		  	<option>Wednesday (5/4/19)</option>
-		  	<option>Thursday (5/5/19)</option>
-		  	<option>Friday (5/6/19)</option>
-		  	<option>Saturday (5/7/19)</option>
+			<option selected="selected">Sunday</option>
+		  	<option>Monday</option>
+		  	<option>Tuesday</option>
+		  	<option>Wednesday</option>
+		  	<option>Thursday</option>
+		  	<option>Friday</option>
+		  	<option>Saturday</option>
 		</select>
 
 
 		<label for="startAvailability">Start Availability</label>
 		<select name="startAvailability" id="startAvailability">
 		  <option selected="selected">8:00am</option>
-		  <option>8:00am</option>
 		  <option>9:00am</option>
 		  <option>10:00am</option>
 		  <option>11:00am</option>
@@ -74,16 +73,6 @@
 		  <option>3:00pm</option>
 		</select>
 
-
-
-		<label for="duration">Duration</label>
-		<select name="duration" id="duration">
-		  <option selected="selected">30 Minutes</option>
-		  <option>1 Hour</option>
-		  <option>1 Hour 30 Minutes</option>
-		  <option>2 Hours</option>
-		</select>
-
 		<label for="salutation">Select a room type</label>
 		<select name="salutation" id="salutation">
 		  
@@ -93,14 +82,41 @@
 		  <option>Any(13)</option>
 		</select>
 		</fieldset>
-
 		</form>
+		
+<?php
+$startTime = $_POST['startAvailability'];
+$endTime = $_POST['endAvailability'];
+$day = $_POST['date'];
+$inst = $_POST['salutation'];
+echo $startTime;
+echo $endTime;
+echo $day;
+echo $inst;
+?>
+
+<script>
+function Reservation(startTime, endTime, day, instrument){
+	this.startTime = startTime;
+	this.endTime = endTime;
+	this.day = day;
+	this.instrument = instrument;
+}
+
+function storeReservation(){
+	var myReservation = new Reservation(startAvailability.value, endAvailability.value, date.value, salutation.value);
+	window.alert(JSON.stringify(myReservation));
+	localstorage.res1 = JSON.stringify(myReservation);
+}
+</script>
+
 		<div id="submit">
-			<button id="findRoom" onclick="findRoom()">
+			<button id="findRoom" onclick="storeReservation()">
 			Find Room!
 			</button>
 		</div>
 		</div>
+		
 
 	<!-- javascript links to jquery and bootstrap keep at bottom of body!
 	To add a new js file, make sure in same folder as html files
