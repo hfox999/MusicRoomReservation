@@ -1,0 +1,101 @@
+/*
+colors from coolors
+purple=#8764A7
+light grey=#C1C1C1
+yellow=#FFCC66
+blue=#97B4D6
+*/
+
+h1, h2, h3, input{
+	font-family: 'Signika', sans-serif;
+}
+input{
+	height: 80px;
+	width: 120px;
+}
+
+div.buttons{
+	padding: 1em;
+}
+
+button.pianoRoom{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+button.harpRoom{
+	background-color: #FFCC66; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+button.keyboardRoom{
+	background-color: #8764A7;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+button.unavailable{
+	background-color: grey; /* Green */
+	opacity: 0.6;
+    cursor: not-allowed;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#map{
+	border-style: solid;
+}
+
+fieldset {
+    border: 0;
+}
+label {
+	display: block;
+ 	margin: 30px 0 0 0;
+}
+#container{
+	padding-top: 4em;
+	vertical-align: center;
+	position: relative;
+
+}
+div{
+	text-align: center;
+	
+}
+
+
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+   background-image: linear-gradient(90deg, #97B4D6, #97B4D6);
+}

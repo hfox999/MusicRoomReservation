@@ -1,5 +1,4 @@
 function findRoom(){
-	var sel = document.getElementById('duration'); 
 	window.location.href = "confirmation.html";
 }
 
@@ -9,6 +8,7 @@ function deleteThis(ele){
 		var caller=ele.parentElement;
 		caller.style.display="none";
 	}
+	var i=0;
 }
 
 function deleteRoom(ele){
@@ -24,4 +24,10 @@ function selectRoom(ele){
 	localStorage[ele] = roomToReserve;
 }
 
-var d = new Date(2018, 11, 24, 10, 33);
+function filterView(){
+	window.location.href = "filter.html";
+}
+function mapView{
+
+}
+

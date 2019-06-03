@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="mapStyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+	<title>Map</title>
+	
+</head>
+<body>
+	<div id="container">
+		<div id="submit">
+		<button id="filterView" onclick="location.href='filter.html';">
+		Filter
+		</button>
+		<button id="mapView" onclick="location.href='map.html';">
+		Map
+		</button>
+	</div>
+		<div id="header">
+			<h1 id="mapInfo">5/1-5/7 Available Rooms</h1>
+		</div>
+		<div id="mapOverview">
+			<div class="buttons" id="legend">
+				<h2>Map Legend:</h2>
+				<button class="pianoRoom">Piano Room</button>
+				<button class="keyboardRoom">Keyboard Room</button>
+				<br>
+				<br>
+				<button class="harpRoom">Harp</button>
+				<button class="unavailable">Unavailable</button>
+				
+				
+			</div>
+			<div id="map">
+				<div class="buttons" id="">
+					<button class="harpRoom">Room 115</button>
+					<button class="pianoRoom">Room 116</button>
+					<button class="pianoRoom">Room 121</button>
+					<button class="keyboardRoom">Room 123</button>
+					<button class="keyboardRoom">Room 186</button>
+				</div>
+				<div class="buttons" id="group2">
+					<button class="harpRoom">Room 164</button>
+					<button class="pianoRoom">Room 165</button>
+					<button class="pianoRoom">Room 166</button>
+					<button class="keyboardRoom">Room 167</button>
+					<button class="keyboardRoom">Room 188</button>
+					<button class="keyboardRoom">Room 187</button>
+				</div>
+				<div class="buttons" id="group3">
+					<button class="harpRoom">Room 191a</button>
+					<button class="unavailable">Room 192a</button>
+					<button class="pianoRoom">Room 193</button>
+					<button class="keyboardRoom">Room 194</button>
+					<button class="keyboardRoom">Room 188</button>
+					<button class="keyboardRoom">Room 187</button>
+				</div>
+				<div class="buttons" id="group4">
+					<button class="unavailable">Room 191b</button>
+					<button class="unavailable">Room 192</button>
+					<button class="keyboardRoom">Room 264</button>
+					<button class="keyboardRoom">Room 265</button>
+					<button class="unavailable">Room 267</button>
+					<button class="unavailable">Room 268</button>
+				</div>
+
+			</div>
+			
+		</div>
+		<div id="submit">
+			<button id="findRoom" onclick="location.href='confirmation.html';">
+			Find Room!
+			</button>
+		</div>
+	</div>
+	
+
+
+	<!-- javascript links to jquery and bootstrap keep at bottom of body!
+	To add a new js file, make sure in same folder as html files
+	<script src="fileNameHere.js"></script>
+	-->
+	<script src="myscript.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

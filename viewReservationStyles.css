@@ -1,3 +1,11 @@
+h1, h2, h3, input{
+	font-family: 'Signika', sans-serif;
+}
+input{
+	height: 80px;
+	width: 120px;
+}
+
 /*
 colors from coolors
 purple=#8764A7
@@ -13,9 +21,15 @@ label {
 	display: block;
  	margin: 30px 0 0 0;
 }
+#container{
+	padding-top: 4em;
+	vertical-align: center;
+	position: relative;
+
+}
 div{
 	text-align: center;
-	background-color: #FFCC66;
+	
 }
 
 select{
@@ -38,7 +52,15 @@ div.room{
 	width: 50;
 }
 
-html, body{
-	height: 100%;
-	width: 100%;
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+   background-image: linear-gradient(90deg, #97B4D6, #97B4D6);
 }
