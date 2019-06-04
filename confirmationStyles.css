@@ -1,0 +1,27 @@
+body{
+	background: #97B4D6;
+}
+
+h1, h2, h3, input, button{
+	font-family: 'Signika', sans-serif;
+}
+
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+
+h1, h2, h3, input{
+	font-family: 'Signika', sans-serif;
+}
+input{
+	height: 80px;
+	width: 120px;
+}
+
+div{
+	padding-top: 2em;
+	text-align: center; 	
+}

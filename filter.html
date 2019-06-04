@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="selectStyles.css">
 	<title>Filter</title>
 	<script>
   $( function() {
@@ -15,29 +16,56 @@
     $( "#number" )
       .selectmenu()
       .selectmenu( "menuWidget" )
-      .addClass( "overflow" );
+        .addClass( "overflow" );
  
     $( "#salutation" ).selectmenu();
   } );
   </script>
+  <style>
+	#filtering{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+	width:50%;
+	text-align:left;
+
+	}
+  
+  </style>
 </head>
 <body>
 
 	<div id="submit">
-		<button id="filterView" onclick="filterView()">
+		<button id="filterView" onclick="location.href='filter.html';">
 		Filter
 		</button>
-		<button id="mapView" onclick="mapView()">
+		<button id="mapView" onclick="location.href='map.html';">
 		Map
 		</button>
 	</div>
 
+
+
+
 	<div class="demo">
+
+
+	
 
 		<form action="#">
 
+
+
 		<fieldset>
+		
+		
+		<table id="filtering">
+		
+		<tr>
+		<td>
 		<label for="date">Select a date</label>
+		</td>
+		<td>
 		<select name="date" id="date">
 			<option selected="selected">Sunday (5/1/19)</option>
 		  	<option>Monday (5/2/19)</option>
@@ -46,13 +74,21 @@
 		  	<option>Thursday (5/5/19)</option>
 		  	<option>Friday (5/6/19)</option>
 		  	<option>Saturday (5/7/19)</option>
+			
+
 		</select>
 
-
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
 		<label for="startAvailability">Start Availability</label>
+		</td>
+		<td>
 		<select name="startAvailability" id="startAvailability">
 		  <option selected="selected">8:00am</option>
-		  <option>8:00am</option>
+		  
 		  <option>9:00am</option>
 		  <option>10:00am</option>
 		  <option>11:00am</option>
@@ -62,7 +98,14 @@
 		  <option>3:00pm</option>
 		</select>
 
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
 		<label for="endAvailability">End Availability</label>
+		</td>
+		<td>
 		<select name="endAvailability" id="endAvailability">
 		  <option selected="selected">8:30am</option>
 		  <option>9:00am</option>
@@ -73,30 +116,50 @@
 		  <option>2:00pm</option>
 		  <option>3:00pm</option>
 		</select>
-
-
-
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
 		<label for="duration">Duration</label>
+		</td>
+		<td>
 		<select name="duration" id="duration">
 		  <option selected="selected">30 Minutes</option>
 		  <option>1 Hour</option>
 		  <option>1 Hour 30 Minutes</option>
 		  <option>2 Hours</option>
 		</select>
-
+		</td>
+		</tr>
+		
+		
+		<tr>
+		<td>	
 		<label for="salutation">Select a room type</label>
-		<select name="salutation" id="salutation">
-		  
+		</td>
+		<td>
+		<select name="salutation" id="salutation">		  
 		  <option>Piano(5)</option>
 		  <option>Keyboard(10)</option>
 		  <option>Harp(3)</option>
 		  <option>Any(13)</option>
 		</select>
+		</td>
+		</tr>		
+		</table>
 		</fieldset>
+		
 
 		</form>
+		
+		
+		
+		
+		
+		
 		<div id="submit">
-			<button id="findRoom" onclick="findRoom()">
+			<button id="findRoom" onclick="location.href='confirmation.html';">
 			Find Room!
 			</button>
 		</div>

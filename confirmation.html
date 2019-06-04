@@ -4,38 +4,47 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="confirmationStyles.css">
+	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
 	<title>View My Reservations</title>
 	
 </head>
 <body>
-	<div class="room" id="room1">
-		<h1 id="confirmRoom">Room 4: Piano</h1>
+	<div id="confirmation">
+		<h1>Please select a room you want or remove rooms that don't fit your schedule!</h1>
+	</div>
+	<div id="noTimesAvailable" style="display: none;">
+		<br>
+		<br>
+		<h2>There are no remaining times available. <br>Please go back and pick a different time, date, or room type.</h2>
+	</div>
+	
+	<div class="room" id="room3">
+		<h1 id="confirmRoom">Room 193: Piano</h1>
 		<h1 id="confirmDate">5/1/19</h1>
-		<h1 id="confirmHours">12:00pm-1:30pm</h1>
+		<h1 id="confirmHours">9:00am-10:30am</h1>
 		<button onclick="deleteRoom(this)">Delete</button>
 		<button onclick="selectRoom(this)">Select</button>
 	</div>
 	<div class="room" id="room2">
-		<h1 id="confirmRoom">Room 4: Piano</h1>
+		<h1 id="confirmRoom">Room 165: Piano</h1>
+		<h1 id="confirmDate">5/1/19</h1>
+		<h1 id="confirmHours">11:00am-12:30pm</h1>
+		<button onclick="deleteRoom(this)">Delete</button>
+		<button onclick="selectRoom(this)">Select</button>
+	</div>
+	<div class="room" id="room1">
+		<h1 id="confirmRoom">Room 116: Piano</h1>
 		<h1 id="confirmDate">5/1/19</h1>
 		<h1 id="confirmHours">12:00pm-1:30pm</h1>
 		<button onclick="deleteRoom(this)">Delete</button>
 		<button onclick="selectRoom(this)">Select</button>
 	</div>
-	<div class="room" id="room3">
-		<h1 id="confirmRoom">Room 4: Piano</h1>
-		<h1 id="confirmDate">5/1/19</h1>
-		<h1 id="confirmHours">12:00pm-1:30pm</h1>
-		<button onclick="deleteRoom(this)">Delete</button>
-		<button onclick="selectRoom(this)">Select</button>
-	</div>
+	
 
 	<div id="backButton">
 		<input type="button" onclick="location.href='filter.html';" value="Back" />
-	</div>
-	<div id="confirmButton">
-		<input type="button" onclick="location.href='viewReservations.html';" value="Confirm" />
+		<input id="backButtonClick" type="button" onclick="location.href='viewReservations.html';" value="Confirm" />
 	</div>
 
 

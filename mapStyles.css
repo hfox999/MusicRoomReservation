@@ -6,7 +6,7 @@ yellow=#FFCC66
 blue=#97B4D6
 */
 
-h1, h2, h3, input{
+h1, h2, h3, input, button{
 	font-family: 'Signika', sans-serif;
 }
 input{
@@ -19,7 +19,7 @@ div.buttons{
 }
 
 button.pianoRoom{
-	background-color: #4CAF50; /* Green */
+	background-color: #415C1B; /* Green */
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -29,7 +29,7 @@ button.pianoRoom{
 	font-size: 16px;
 }
 button.harpRoom{
-	background-color: #FFCC66; /* Green */
+	background-color: #746029;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -51,11 +51,11 @@ button.keyboardRoom{
 }
 
 button.unavailable{
-	background-color: grey; /* Green */
-	opacity: 0.6;
+	background-color: lightgray; /* Green */
+	opacity: .8;
     cursor: not-allowed;
 	border: none;
-	color: white;
+	color: black;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -85,6 +85,11 @@ div{
 	
 }
 
+
+
+#mapView{
+
+}
 
 
 html {

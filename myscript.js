@@ -1,22 +1,32 @@
-function findRoom(){
-	window.location.href = "confirmation.html";
-}
-
+var numberOfReservations=2;
+var numberOfRooms=3;
 function deleteThis(ele){
 	var deleteTrue=confirm("Are you sure you want to delete this reservation?");
 	if(deleteTrue){
+		numberOfReservations--;
 		var caller=ele.parentElement;
 		caller.style.display="none";
 	}
-	var i=0;
+	if(numberOfReservations==0){
+		var noReservations=document.getElementById("noReservations");
+		noReservations.style.display="block";
+	}
 }
 
 function deleteRoom(ele){
 	var deleteTrue=confirm("Are you sure you want to delete this room?");
 	if(deleteTrue){
+		numberOfRooms--;
 		var caller=ele.parentElement;
 		caller.style.display="none";
 	}
+	if(numberOfRooms==0){
+		var noReservations=document.getElementById("noTimesAvailable");
+		var backButton=document.getElementById("backButtonClick");
+		noReservations.style.display="block";
+		backButton.style.display="none";
+	}
+
 }
 
 function selectRoom(ele){
@@ -24,10 +34,4 @@ function selectRoom(ele){
 	localStorage[ele] = roomToReserve;
 }
 
-function filterView(){
-	window.location.href = "filter.html";
-}
-function mapView{
-
-}
 

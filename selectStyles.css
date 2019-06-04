@@ -1,0 +1,73 @@
+/*
+colors from coolors
+purple=#8764A7
+light grey=#C1C1C1
+yellow=#FFCC66
+blue=#97B4D6
+*/
+
+h1, h2, h3, button, td, tr, input{
+	font-family: 'Signika', sans-serif;
+}
+
+fieldset {
+    border: 0;
+}
+label {
+	display: block;
+	font-size:20px;
+}
+div{
+	text-align: center;
+	background-size: fill;
+
+}
+
+body{
+	background-color: #97B4D6;
+}
+
+select{
+	width:200px;
+	font-size: 20px;
+	margin-left:5vh;
+	background-color: #E8EDFF;
+}
+
+
+
+
+button{
+	margin-top:5vh;
+	font-size: 25px;
+	text-align: center;
+}
+#navigation{
+	
+	margin-top: 30vh;
+	font-size:25px;
+	padding: 20px ;
+	text-align: center;
+}
+#confirmButton{
+	margin-top:5vh;
+	
+}
+#backButton{
+	margin-top:5vh;
+	
+}
+#confirmation{
+	
+    background: #E8EDFF;
+    padding: 1em;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-top: 20vh;
+    box-sizing: border-box;
+    max-width: 400px;
+	border-radius: 25px;
+
+}

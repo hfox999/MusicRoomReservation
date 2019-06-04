@@ -1,6 +1,5 @@
-h1.title{
-	font-family: 'Exo', sans-serif;
-	font-style: 'Light';
+h1, h2, button, h3, input, form{
+	font-family: 'Signika', sans-serif;
 }
 
 
@@ -12,25 +11,44 @@ h1.title{
 	color: white;
 }
 
+
+
 #home{
-	background: url(pianoPractice.jpg) no-repeat center center fixed;
+	
 	display: table;
 	height: 100%;
 	position: relative;
 	width: 100%;
-	background-size: cover;
+	
 }
 
 html, body{
 	height: 100%;
 	width: 100%;
+	background:url(pianoPractice.jpg) no-repeat center center fixed;
+	background-size:cover;
 }
 .landing-text{
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	color: white;
+
 }
+
+section.login {
+    background: white;
+    padding: 1em;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-top: 20vh;
+    box-sizing: border-box;
+    max-width: 400px;
+	border-radius: 25px;	
+}
+
+
 
 
 div.images{

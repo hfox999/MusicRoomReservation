@@ -1,44 +1,41 @@
-/*
-colors from coolors
-purple=#8764A7
-light grey=#C1C1C1
-yellow=#FFCC66
-blue=#97B4D6
-*/
-
-fieldset {
-    border: 0;
-}
-label {
-	display: block;
- 	margin: 30px 0 0 0;
-}
-div{
-	text-align: center;
-	background-color: #FFCC66;
+h1.title{
+	font-family: 'Exo', sans-serif;
+	font-style: 'Light';
 }
 
-select{
-	font-size: 40px;
-	background-color: #C1C1C1;
+
+#title{
+	color: white;
+}
+#description{
+	font-style: italic;
+	color: white;
 }
 
-label{
-	font-size: 40px;
-}
-button{
-	text-align: center;
-}
-#navigation{
-	text-align: center;
-}
-
-div.room{
-	border-style: solid;
-	width: 50;
+#home{
+	background: url(pianoPractice.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
 }
 
 html, body{
 	height: 100%;
 	width: 100%;
+}
+.landing-text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+
+div.images{
+	padding-top: 7.4em;
+	float: left;
+	text-align: center;
+	width: 33.33%;
 }
